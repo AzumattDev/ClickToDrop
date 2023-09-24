@@ -1,0 +1,9 @@
+{
+  "name": "ClickToDrop",
+  "version_number": "1.0.0",
+  "website_url": "https://discord.gg/Vd89cSgxNW",
+  "description": "Simple mod that allows you to use a (configurable) modifier key to drop items from your inventory by clicking on them instead of having to drag.",
+  "dependencies": [
+    "SunkenlandModding-BepInExPack_Sunkenland-5.4.22"
+  ]
+}
