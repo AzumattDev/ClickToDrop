@@ -13,7 +13,7 @@ namespace ClickToDrop;
 public class ClickToDropPlugin : BaseUnityPlugin
 {
     internal const string ModName = "ClickToDrop";
-    internal const string ModVersion = "1.0.0";
+    internal const string ModVersion = "1.0.1";
     internal const string Author = "Azumatt";
     private const string ModGUID = Author + "." + ModName;
     private static string ConfigFileName = ModGUID + ".cfg";
@@ -70,7 +70,7 @@ static class UIInventoryAwakePatch
         if (!Input.GetKey(KeyCode.LeftControl)) return;
         if (!itemInSlot)
             return;
-        if (__instance._chestStorage)
+        if (__instance._currentOperatingChestStorage)
             return;
         __instance.discardZone.transform.Find("BG (3)").GetComponent<UIInventoryDiscardItem>().TryDropItem(itemInSlot);
         __instance.Refresh();
